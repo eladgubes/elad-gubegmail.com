@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book shop</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body onload="onInit()">
+    <div class="container">
+        <div class="header">
+            <img src="image/leather-book.png">
+            <h1>My Book Store</h1>
+        </div>
+        <div class="main-content">
+            <div class="book-shelf">
+                <div class="add">
+                    <button onclick="onOpenBookMenu()">Add book</button>
+                </div>
+                <div class="book-table"></div>
+                <div class="pages">
+                    <div class="pages-bar">
+                        <div class="page down" onclick="onPageSet(-1)">&lt&lt</div>
+                        <div class="page last"></div>
+                        <div class="page current"></div>
+                        <div class="page next"></div>
+                        <div class="page up" onclick="onPageSet(1)">&gt&gt</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal"></div>
+        </div>
+
+        <div class="footer">
+            <h1>Admin view</h1>
+        </div>
+    </div>
+
+
+    <script src="js/utils.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+
+</html>
